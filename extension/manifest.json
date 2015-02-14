@@ -4,7 +4,11 @@
   "name": "Rice University Official Page",
   "description": "This extension fixes an error with the name of the Facebook Page: Rice University Offical Page",
   "version": "1.0",
-
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png" },
+    
   "content_scripts": [
     {
       "matches": ["https://www.facebook.com/*"],
