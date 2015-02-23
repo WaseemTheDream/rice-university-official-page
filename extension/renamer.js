@@ -1,13 +1,19 @@
 /**
- * Renames instances of "Rice University Official Page" to "Rice University".
+ * Renames instances of "Rice University" to "Rice University Official Page".
  * @author Waseem Ahmad <me@waseemahmad.com>
  */
 
+/**
+ * Finds occurences of Rice University on the entire page and replaces them with Rice University
+ * Official Page.
+ */
 function makeItSo() {
-  var source = "Rice University Official Page";
-  var replace = "Rice University";
-  $('a:contains("' + source + '")').text(replace);
-  $('span:contains("' + source + '")').text(replace);
+  var selectors = ['a', 'span'];
+  for (var i in selectors) {
+    var selector = selectors[i];
+    $(selector + ':contains("Rice University"):not(:contains("Rice University Official Page"))')
+        .text("Rice University Official Page");
+  }
 }
 
 var observer = new MutationObserver(function(mutations, observer) {

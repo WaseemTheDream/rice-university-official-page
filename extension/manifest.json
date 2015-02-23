@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Rice University Official Page",
-  "description": "This extension fixes an error with the name of the Facebook Page: Rice University Offical Page",
-  "version": "1.0",
+  "description": "This extension brings back the good old days when the Facebook page was called Rice University Official Page.",
+  "version": "2.0",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
